@@ -27,7 +27,10 @@ public class statusKelulusan {
         System.out.print("Masukkan nilai Tugas\t: ");
         int tugas2 = sc.nextInt();
 
-
+         // menghitung nilai akhir dan rata-rata
+        double nilaiAkhir1 = (0.3 * uts1) + (0.4 * uas1) + (0.3 * tugas1);
+        double nilaiAkhir2 = (0.3 * uts2) + (0.4 * uas2) + (0.3 * tugas2);
+        double rataRata = (nilaiAkhir1 + nilaiAkhir2) / 2;
         sc.close();
     }
 }
