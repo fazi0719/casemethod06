@@ -31,6 +31,13 @@ public class statusKelulusan {
         double nilaiAkhir1 = (0.3 * uts1) + (0.4 * uas1) + (0.3 * tugas1);
         double nilaiAkhir2 = (0.3 * uts2) + (0.4 * uas2) + (0.3 * tugas2);
         double rataRata = (nilaiAkhir1 + nilaiAkhir2) / 2;
+
+        // menenentukan status kelulusan
+        String statusAlgoritmaDanPempograman = (nilaiAkhir1 >= 60) ? "LULUS" : "TIDAK LULUS";
+        String statusStrukturData = (nilaiAkhir2 >= 60) ? "LULUS" : "TIDAK LULUS";
+        String statusSemester = (rataRata >= 70) ? "LULUS (rata-rata >70)" : "TIDAK LULUS (rata-rata <70)";
+
+        
         sc.close();
     }
 }
