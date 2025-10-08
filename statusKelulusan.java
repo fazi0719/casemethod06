@@ -37,7 +37,25 @@ public class statusKelulusan {
         String statusStrukturData = (nilaiAkhir2 >= 60) ? "LULUS" : "TIDAK LULUS";
         String statusSemester = (rataRata >= 70) ? "LULUS (rata-rata >70)" : "TIDAK LULUS (rata-rata <70)";
 
-        
+        // mengkonversi nilai akhir ke dalam skala huruf
+        String huruf1, huruf2;
+
+        if (nilaiAkhir1 >= 80) { huruf1 = "A";
+        } else if (nilaiAkhir1 >= 73) { huruf1 = "B+";
+        } else if (nilaiAkhir1 >= 65) { huruf1 = "B";
+        } else if (nilaiAkhir1 >= 60) { huruf1 = "C+";
+        } else if (nilaiAkhir1 >= 50) { huruf1 = "C";
+        } else if (nilaiAkhir1 >= 39) { huruf1 = "D";
+        } else { huruf1 = "E";
+        }
+        if (nilaiAkhir2 >= 80) { huruf2 = "A";
+        } else if (nilaiAkhir2 >= 73) { huruf2 = "B+";
+        } else if (nilaiAkhir2 >= 65) { huruf2 = "B";
+        } else if (nilaiAkhir2 >= 60) { huruf2 = "C+";
+        } else if (nilaiAkhir2 >= 50) { huruf2 = "C";
+        } else if (nilaiAkhir2 >= 39) { huruf2 = "D";
+        } else { huruf2 = "E";
+        }
         sc.close();
     }
 }
