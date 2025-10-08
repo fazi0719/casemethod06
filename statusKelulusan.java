@@ -8,6 +8,15 @@ public class statusKelulusan {
         String nama = sc.nextLine();
         System.out.print("NIM\t: ");
         String nim = sc.nextLine();
+
+        // memasukkan mata kuliah 1 
+        System.out.println("\n----- Mata Kuliah 1\t: Algoritma dan Pemrograman -----");
+        System.out.print("Masukkan nilai UTS\t: ");
+        int uts1 = sc.nextInt();
+        System.out.print("Masukkan nilai UAS\t: ");
+        int uas1 = sc.nextInt();
+        System.out.print("Masukkan nilai Tugas\t: ");
+        int tugas1 = sc.nextInt();
         
             
 
