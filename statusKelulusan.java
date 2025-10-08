@@ -80,7 +80,18 @@ public class statusKelulusan {
         System.out.println("\nMata Kuliah 1\t\tUTS\t UAS\t Tugas\t Nilai Akhir\t Nilai Huruf\t Status");
         System.out.println("----------------------------------------------------------------------------------------------");
 
-        
+        // menampilkan hasil untuk setiap mata kuliah 
+        // String.format untuk membatasi angka desimal menjadi 2 angka di belakang koma
+
+        System.out.println("Algoritma dan Pemrograman\t " + uts1 + "\t " + uas1 + "\t " + tugas1 + "\t " + String.format("%.2f", nilaiAkhir1) + "\t\t " + huruf1 + "\t\t " + statusAlgoritmaDanPempograman);
+        System.out.println("Struktur Data\t\t\t " + uts2 + "\t " + uas2 + "\t " + tugas2 + "\t " + String.format("%.2f", nilaiAkhir2) + "\t\t " + huruf2 + "\t\t " + statusStrukturData);
+
+        //menampilkan rata-rata dari nilai kedua mata kuliah
+        System.out.println("\nRata-rata nilai akhir kedua mata kuliah: " + String.format("%.2f", rataRata));
+        //menampilkan status kelulusan berdasarkan rata-rata nilai akhir
+        System.out.println("Status kelulusan semester: " + status_semester);
+
+        sc.close();
     }
 }
 
