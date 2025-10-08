@@ -56,7 +56,31 @@ public class statusKelulusan {
         } else if (nilaiAkhir2 >= 39) { huruf2 = "D";
         } else { huruf2 = "E";
         }
-        sc.close();
+
+        // implementasi nested if untuk status kelulusan
+        String status_semester;
+
+        // kondisi luar (syarat 1): jika kedua mata kuliah lulus
+        if (statusAlgoritmaDanPempograman.equals("LULUS") && statusStrukturData.equals("LULUS")) {
+            //equals untuk membandingkan string
+
+            // kondisi dalam (syarat 2): cek rata-rata 
+            if (rataRata >= 70) { status_semester = "LULUS SEMESTER"; // syarat 1 dan 2 terpenuhi
+            } else { status_semester = "TIDAK LULUS SEMESTER"; // syarat 1 terpenuhi, syarat 2 tidak terpenuhi
+            }
+
+        } else {  // jika salah satu atau kedua mata kuliah tidak lulus (syarat 1 tidak terpenuhi)
+            status_semester = "TIDAK LULUS SEMESTER (satu/kedua mata kuliah tidak lulus)"; 
+        }
+
+        //output
+        System.out.println("\n====== HASIL PENILAIAN  AKADEMIK ======");
+        System.out.println("Nama\t\t: " + nama);
+        System.out.println("NIM\t\t: " + nim);
+        System.out.println("\nMata Kuliah 1\t\tUTS\t UAS\t Tugas\t Nilai Akhir\t Nilai Huruf\t Status");
+        System.out.println("----------------------------------------------------------------------------------------------");
+
+        
     }
 }
 
